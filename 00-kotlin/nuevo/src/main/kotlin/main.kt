@@ -66,3 +66,68 @@ fun calcularSueldo(
         return sueldo * (100 / tasa) + bonoEspecial
     }
 }
+
+abstract class NumerosJava{
+    protected val numeroUno: Int
+    private val numeroDos: Int
+
+    constructor(
+        uno:Int,
+        dos: Int
+    ){ // Bloque codigo contructor
+        this.numeroUno = uno
+        this.numeroDos = dos
+        println("Inicializacion")
+    }
+}
+
+abstract class Numeros(//constructor primario
+    //uno: Int, //parametro
+//public var uno: Int,//propiedad de la clase publica
+    protected val numeroUno: Int
+    protected val numeroDos: Int
+){
+    init{//bloque de codigo del constructor primario
+      //  this.numeroUno = uno
+        this.numeroUno
+        numeroUno
+        this.numeroDos
+        numeroDos
+        println("Inicializacion")
+    }
+}
+
+class Suma( //Constructor primario
+    uno: Int, //parametro
+    dos: Int//parametro
+): Numeros(uno,dos){
+    init{ //Bloque constructor primario
+        this.numeroUno
+        this.numeroDos
+    }
+    constructor(// Segundo constructor
+        uno: Int?, //parametro
+        dos: Int//parametro
+    ):this(
+        if(uno == null) 0 else uno,
+        dos
+    ){}
+    constructor(// tercer constructor
+        uno: Int, //parametro
+        dos: Int?//parametro
+    ):this(
+        uno,
+        if(dos == null) 0 else uno
+
+    ){}
+    constructor(// Cuarto constructor
+        uno: Int?, //parametro
+        dos: Int?//parametro
+    ):this(
+        if(uno == null) 0 else uno,
+        if(dos == null) 0 else uno
+    ){}
+    public fun sumar(): Int {
+        return numeroUno + numeroDos
+    }
+}

@@ -46,6 +46,47 @@ fun main(){
         else -> println("No reconocido")
     }
     val coqueteo = if(estadoCivilWhen == "S") "SI" else "NO"
+
+    //arreglo estatico
+    val arregloEstatico: Array<Int> = arrayOf<Int>(1,2,3)
+    println(arregloEstatico)
+
+    //arreglo dinámico
+    val arregloDinamico: ArrayList<Int> = arrayListOf<Int>(1,2,3,4,5,6,7,8,9,10)
+    println(arregloDinamico)
+    arregloDinamico.add(11)
+    arregloDinamico.add(12)
+    println(arregloDinamico)
+    //OPERADORES -> sIRVEN PARA LOS ARREGLOS ESTÁTICOS Y DINÁMICOS
+
+    //For each -> Unit
+    //Iterar un arreglo
+    val respuestaForEach: Unit = arregloDinamico
+        .forEach {
+            valorActual: Int ->
+            println("Valor actual: ${valorActual}")
+        }
+    arregloEstatico
+        .forEachIndexed {indice: Int, valorActual: Int ->
+            print("Valor ${valorActual} Indice: ${indice}")
+        }
+    println(respuestaForEach)
+
+    //Operador MAP: transforma arreglos
+    //MAP -> Muta el arreglo(Cambia el arreglo)
+    //1) Enviemos el nuevo valor de la iteración
+    //2) Nos devuelve es un NUEVO ARREGLO con los valores modificados
+
+    val respuestaMap: List<Double> = arregloDinamico
+        .map { valorActual: Int ->
+            return@map valorActual.toDouble() + 100.00
+        }
+    println(respuestaMap)
+     val resouestaMapDos = arregloDinamico.map {it + 15}
+         //.map { valorActual: Int ->
+         //   return@map valorActual + 15
+         //}
+    println(resouestaMapDos)
 }
 
 fun imprimirNombre(nombre: String): Unit {
@@ -84,7 +125,7 @@ abstract class NumerosJava{
 abstract class Numeros(//constructor primario
     //uno: Int, //parametro
 //public var uno: Int,//propiedad de la clase publica
-    protected val numeroUno: Int
+    protected val numeroUno: Int,
     protected val numeroDos: Int
 ){
     init{//bloque de codigo del constructor primario
@@ -131,3 +172,5 @@ class Suma( //Constructor primario
         return numeroUno + numeroDos
     }
 }
+
+

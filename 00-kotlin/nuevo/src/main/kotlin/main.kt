@@ -86,7 +86,52 @@ fun main(){
          //.map { valorActual: Int ->
          //   return@map valorActual + 15
          //}
+
+    // Filter -> FILTRAR EL ARREGLO
+    // 1) Devolver una expresion (TRUE o FALSE)
+    // 2) Nuevo arreglo filtrado
+
+    val respuestaFilter: List<Int> = arregloDinamico
+        .filter { valorActual: Int ->
+            val mayoresACinco: Boolean = valorActual > 5// Expresion Condicion
+            return@filter mayoresACinco
+        }
+    val respuestaFilterdos = arregloDinamico.filter { it <= 5}
+    println(respuestaFilter)
+    println(respuestaFilterdos)
     println(resouestaMapDos)
+
+    // OR AND
+    // OR -> ANY (Alguno cumple?)
+    // AND -> ALL (Todos cumple?)
+
+    val respuestAny: Boolean = arregloDinamico
+        .any { valorActual: Int ->
+            return@any (valorActual > 5)
+        }
+    println(respuestAny) // true
+
+    val respuestaALL: Boolean = arregloDinamico
+        .all { valorActual: Int ->
+            return@all (valorActual > 5)
+        }
+    println(respuestaALL) // false
+
+    //REDUCE -> Valor acumulado
+    // valor acumulado = 0 (Siempre 0 en Lengiaje Kotlin)
+    //  1,2,3,4,5 -> Sumeme todos los valores del arreglo
+    // valorIteracción1 = valorEmpieza + 1 =0 + 1 = 1 -> Iteracion 1
+    // valorIteracción2 = valorIteracción1 + 2 =1 + 2 = 3 -> Iteracion 2
+    // valorIteracción3 = valorIteracción2 + 3 =3 + 3 = 6 -> Iteracion 3
+    // valorIteracción4 = valorIteracción3 + 4 =6 + 4 = 10 -> Iteracion 4
+    // valorIteracción5 = valorIteracción4 + 5 =10 + 5 = 15 -> Iteracion 5
+
+    val respuestaReduce: Int = arregloDinamico
+        .reduce{ // acumulado = 0 -> SIEMPRE EMPIEZA EN 0
+                acumulado: Int, valorActual: Int ->
+            return@reduce (acumulado + valorActual) // logica de negocio
+        }
+    println(respuestaReduce) // 78
 }
 
 fun imprimirNombre(nombre: String): Unit {
@@ -171,6 +216,7 @@ class Suma( //Constructor primario
     public fun sumar(): Int {
         return numeroUno + numeroDos
     }
+
 }
 
 

@@ -13,6 +13,7 @@ class ACicloVida : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityAcicloVidaBinding
+    var textGLOBAL = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,4 +38,31 @@ class ACicloVida : AppCompatActivity() {
         return navController.navigateUp(appBarConfiguration)
                 || super.onSupportNavigateUp()
     }
+
+    fun mostrarSnackbar(texyto:String){
+        textGLOBAL += texto
+        Snakbar.make(findViewById(R.id.cliclo_vida)),
+        textGLOBAL, Snakbar.LENGTH_LONG)
+        .setAction("Action", null).show()
+    }
+
+    override fun onSaveInstanceState(outState: Bundle){
+        outState.run {
+            // Guardar las variables
+            //Primitivos
+            putString("textGuardado", textGLOBAL)
+        }
+        super.onSaveInstanceState(outState)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle){
+        super.onRestoreInstanceState(savedInstanceState)
+        val textoRecuperado: String? = savedInstanceState.getString("textoGuardado")
+        if(textoGuardado! = null){
+            mostrarSnackbar(textoRecuperado)
+            textGLOBAL = textoRecuperado
+        }
+    }
+
+
 }

@@ -51,7 +51,7 @@ fun agregarAutosAConcesionaria(){   //1
 }
 
 fun editarItems(){   //2
-    print("Ingresar Nombre del Auto a eliminar: ")
+    print("Ingresar Nombre del Auto a editar: ")
     val nombreAEditar = readLine()
     print("Ingresar el nuevo nombre del Auto: ")
     val nuevoNombre = readLine()

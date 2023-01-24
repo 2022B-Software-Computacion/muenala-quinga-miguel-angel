@@ -5,39 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f7e36d2-411d-4989-8ed8-b74c57d45463" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archivo/fichero - copia.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archivo/fichero.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/examen/META-INF/examen.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/examen/MainKt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Auto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Concesionaria.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../01-android/app/src/main/java/com/example/mmaplication/CIntentExplicitoParametros.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../01-android/app/src/main/java/com/example/mmaplication/EBaseDeDatos.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../01-android/app/src/main/java/com/example/mmaplication/ECrudEntrenador.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../01-android/app/src/main/java/com/example/mmaplication/ESqliteHelperEntrenador.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../01-android/app/src/main/java/com/example/mmaplication/FRecyclerViewAdaptadorNombreCedula.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../01-android/app/src/main/java/com/example/mmaplication/GRecyclerView.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../01-android/app/src/main/res/layout/activity_cintent_explicito_parametros.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../01-android/app/src/main/res/layout/activity_ecrud_entrenador.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../01-android/app/src/main/res/layout/activity_grecycler_view.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../01-android/app/src/main/res/layout/recycler_view_vista.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../01-android/app/src/main/res/menu/menu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../nuevo/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../nuevo/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01-android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01-android/app/src/main/java/com/example/mmaplication/BBaseDatosMemoria.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-android/app/src/main/java/com/example/mmaplication/BBaseDatosMemoria.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01-android/app/src/main/java/com/example/mmaplication/BEntrenador.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-android/app/src/main/java/com/example/mmaplication/BEntrenador.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01-android/app/src/main/java/com/example/mmaplication/BListView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-android/app/src/main/java/com/example/mmaplication/BListView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01-android/app/src/main/java/com/example/mmaplication/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-android/app/src/main/java/com/example/mmaplication/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01-android/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-android/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01-android/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-android/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivo/fichero.txt" beforeDir="false" afterPath="$PROJECT_DIR$/archivo/fichero.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/examen/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/examen/MainKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Auto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Auto.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673202137865</updated>
-      <workItem from="1673202139256" duration="60499000" />
+      <workItem from="1673202139256" duration="64776000" />
     </task>
     <servers />
   </component>

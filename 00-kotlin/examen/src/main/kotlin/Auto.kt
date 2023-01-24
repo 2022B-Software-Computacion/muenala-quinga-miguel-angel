@@ -16,7 +16,7 @@ class Auto {
 
             //
             print("Ingrese el nombre del auto: ")
-            val nombreAauto = readLine()//Pedir Año
+            val nombreAauto = readLine()//Pedir nombre
             print("Ingrese el Año del auto: ")
             val anioAuto = readLine()//Pedir Año
             print("Ingrese la potencia/revoluciones del motor del auto: ")

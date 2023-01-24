@@ -31,8 +31,20 @@
         android:id="@+id/btn_ciclo_vida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ciclo de Vida"
+        android:text="I.Explicito"
         tools:layout_editor_absoluteX="215dp"
         tools:layout_editor_absoluteY="243dp" />
+
+    <Button
+        android:id="@+id/btn_intent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I.Imlicito" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

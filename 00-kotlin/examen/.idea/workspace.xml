@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0f7e36d2-411d-4989-8ed8-b74c57d45463" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivo/fichero - copia.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivo/fichero.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/examen/META-INF/examen.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/examen/MainKt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Auto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Concesionaria.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01-android/app/src/main/java/com/example/mmaplication/CIntentExplicitoParametros.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01-android/app/src/main/java/com/example/mmaplication/EBaseDeDatos.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01-android/app/src/main/java/com/example/mmaplication/ECrudEntrenador.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01-android/app/src/main/java/com/example/mmaplication/ESqliteHelperEntrenador.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01-android/app/src/main/java/com/example/mmaplication/FRecyclerViewAdaptadorNombreCedula.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01-android/app/src/main/java/com/example/mmaplication/GRecyclerView.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01-android/app/src/main/res/layout/activity_cintent_explicito_parametros.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01-android/app/src/main/res/layout/activity_ecrud_entrenador.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01-android/app/src/main/res/layout/activity_grecycler_view.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01-android/app/src/main/res/layout/recycler_view_vista.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01-android/app/src/main/res/menu/menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nuevo/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../nuevo/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01-android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01-android/app/src/main/java/com/example/mmaplication/BBaseDatosMemoria.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-android/app/src/main/java/com/example/mmaplication/BBaseDatosMemoria.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01-android/app/src/main/java/com/example/mmaplication/BEntrenador.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-android/app/src/main/java/com/example/mmaplication/BEntrenador.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01-android/app/src/main/java/com/example/mmaplication/BListView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-android/app/src/main/java/com/example/mmaplication/BListView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01-android/app/src/main/java/com/example/mmaplication/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-android/app/src/main/java/com/example/mmaplication/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01-android/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-android/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01-android/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-android/app/src/main/res/values/strings.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectId" id="2K3TBCcatCFnQxgJwlfyxesNUIn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="examen" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.MainKt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0f7e36d2-411d-4989-8ed8-b74c57d45463" name="Changes" comment="" />
+      <created>1673202137865</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673202137865</updated>
+      <workItem from="1673202139256" duration="60499000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

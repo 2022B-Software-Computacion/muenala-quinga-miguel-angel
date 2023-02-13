@@ -1,16 +1,20 @@
 package com.example.mmaplication
 
+import android.app.Activity
 import android.app.Instrumentation.ActivityResult
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.ContactsContract
 import android.util.Log
 import android.widget.Button
+import androidx.activity.result.contract.ActivityResultContracts
+import com.example.cspnapplication.R
 
 class MainActivity : AppCompatActivity() {
 
-    val contenidoIntentExplicito = registerForActivityResult(ActivityResultContracts.StarActivityForResult()){ result ->
+    val contenidoIntentExplicito = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){ result ->
         if(result.resultCode == Activity.RESULT_OK){
             if(result.data != null){
                 val data = result.data
@@ -48,8 +52,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -77,7 +79,8 @@ class MainActivity : AppCompatActivity() {
                 contenidoIntentImplicito.launch(intetnConRespuesta)
             }
 
-        val botonIntent = findViewById<R.btn_intent>
+
+        val botonIntent = findViewById<Button>(R.id.btn_intent)
         botonIntent
             .setOnClickListener {
                 abrirActividadConParametros(CIntentExplicitoParametros::class.java)
@@ -87,8 +90,20 @@ class MainActivity : AppCompatActivity() {
             .setOnClickListener{
                 irActividad(ECrudEntrenador::class.java)
             }
-
+        val botonMaps = findViewById<Button>(R.id.btn_google_maps)
+        botonMaps
+            .setOnClickListener{
+                irActividad(HGoogleMapsActivity::class.java)
+            }
+        val botonFirebaseUI =findViewById<Button>(R.id.btn_intent_firebase_ui)
+        botonFirebaseUI
+            .setOnClickListener {
+                irActividad(IFirebaseUIAuth::class.java)
+            }
     }
+
+
+
     fun abrirActividadConParametros(
         clase: Class<*>
     ){
@@ -109,7 +124,7 @@ class MainActivity : AppCompatActivity() {
         clase: Class<*>
     ){
         val intent = Intent(this, clase)
-        starActivity(intent)
+        startActivity(intent)
     }
 
 }

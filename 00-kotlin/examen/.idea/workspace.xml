@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0f7e36d2-411d-4989-8ed8-b74c57d45463" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archivo/fichero.txt" beforeDir="false" afterPath="$PROJECT_DIR$/archivo/fichero.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/examen/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/examen/MainKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Auto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Auto.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01-android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-android/app/src/main/AndroidManifest.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +69,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673202137865</updated>
-      <workItem from="1673202139256" duration="64776000" />
+      <workItem from="1673202139256" duration="66164000" />
     </task>
     <servers />
   </component>

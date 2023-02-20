@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "353637412719",
+    "project_id": "b-s-mamq",
+    "storage_bucket": "b-s-mamq.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353637412719:android:9e651daadadd60a1a5429a",
+        "android_client_info": {
+          "package_name": "com.example.mmaplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353637412719-jbhurs82bre3spr9vu86a1enthdhafse.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfcaY7JYm-pVTFSzb1TICg98kvSW77Gtw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "353637412719-jbhurs82bre3spr9vu86a1enthdhafse.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#090909"
+    app:circularflow_radiusInDP="9dp"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#000000"
+        app:itemRippleColor="#FFFFFF"
+        app:itemTextColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+         ><!-- app:menu="@menu/menu_main"-->
+
+        <TextView
+            android:id="@+id/tvMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="327dp"
+            android:layout_marginTop="30dp"
+            android:text="Más"
+            android:textColor="#808080" />
+
+        <TextView
+            android:id="@+id/tvDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="217dp"
+            android:layout_marginTop="30dp"
+            android:text="Descargas"
+            android:textColor="#808080" />
+
+        <TextView
+            android:id="@+id/tvSear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="128dp"
+            android:layout_marginTop="30dp"
+            android:text="Buscar"
+            android:textColor="#808080" />
+
+        <TextView
+            android:id="@+id/tvHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="30dp"
+            android:text="Inicio"
+            android:textColor="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/ivMore"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="325dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/ic_more" />
+
+        <ImageView
+            android:id="@+id/ivDown"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="235dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/ic_baseline_download_24" />
+
+        <ImageView
+            android:id="@+id/ivSear"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="135dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/ic_search" />
+
+        <ImageView
+            android:id="@+id/ivHome"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/ic_home" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="675dp"
+        android:background="#090909"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#090909">
+
+            <TextView
+                android:id="@+id/tvPopulares"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="1dp"
+                android:text="Populares en Netflix"
+                android:textColor="#ffffff"
+                app:layout_constraintBottom_toTopOf="@+id/recyclerNetflix"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialToolbar" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/bestSellerRecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clothingRecyclerView" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/clothingRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/offerRecyclerview" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/offerRecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerNetflix" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerNetflix"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvPopulares" />
+
+            <TextView
+                android:id="@+id/tvPeliculas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="3dp"
+                android:text="Peliculas"
+                android:textColor="#ffffff"
+                app:layout_constraintBottom_toTopOf="@+id/offerRecyclerview"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerNetflix" />
+
+            <TextView
+                android:id="@+id/tvSeries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="3dp"
+                android:text="Series"
+                android:textColor="#ffffff"
+                app:layout_constraintBottom_toTopOf="@+id/clothingRecyclerView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/offerRecyclerview" />
+
+            <TextView
+                android:id="@+id/tvAnimes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="3dp"
+                android:text="Animes"
+                android:textColor="#ffffff"
+                app:layout_constraintBottom_toTopOf="@+id/bestSellerRecyclerview"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clothingRecyclerView" />
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/materialToolbar"
+                android:layout_width="409dp"
+                android:layout_height="500dp"
+                android:background="@drawable/st"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintBottom_toTopOf="@+id/tvPopulares"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="117dp"
+                android:text="Información"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/materialToolbar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnReproducir"
+                app:layout_constraintTop_toBottomOf="@+id/ivInfo" />
+
+            <TextView
+                android:id="@+id/tvMLista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="117dp"
+                android:text="Mi lista"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/materialToolbar"
+                app:layout_constraintEnd_toStartOf="@+id/btnReproducir"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivAdd" />
+
+            <ImageView
+                android:id="@+id/ivInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="136dp"
+                app:layout_constraintBottom_toBottomOf="@+id/materialToolbar"
+                app:layout_constraintEnd_toEndOf="@+id/materialToolbar"
+                app:layout_constraintStart_toEndOf="@+id/btnReproducir"
+                app:srcCompat="@drawable/ic_baseline_error_outline_24" />
+
+            <ImageView
+                android:id="@+id/ivAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="136dp"
+                app:layout_constraintBottom_toBottomOf="@+id/materialToolbar"
+                app:layout_constraintEnd_toStartOf="@+id/btnReproducir"
+                app:layout_constraintHorizontal_bias="0.512"
+                app:layout_constraintStart_toStartOf="@+id/materialToolbar"
+                app:srcCompat="@drawable/ic_twotone_add_24" />
+
+            <ImageView
+                android:id="@+id/ivLlaw"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="26dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/materialToolbar"
+                tools:srcCompat="@drawable/poch" />
+
+            <TextView
+                android:id="@+id/tvCategorias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="68dp"
+                android:text="Categorías"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/tvPelic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvPelic"
+                app:layout_constraintTop_toTopOf="@+id/tvPelic"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/tvPelic"
+                android:layout_width="63dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="80dp"
+                android:text="Películas"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="@+id/materialToolbar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/materialToolbar" />
+
+            <TextView
+                android:id="@+id/tvSeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="10dp"
+                android:text="SeriesTV"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/tvPelic"
+                app:layout_constraintEnd_toStartOf="@+id/tvPelic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvPelic" />
+
+            <ImageView
+                android:id="@+id/ivLogNef"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/materialToolbar"
+                app:srcCompat="@drawable/netf" />
+
+            <Button
+                android:id="@+id/btnReproducir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="130dp"
+                android:backgroundTint="#D52B2B2B"
+                android:text="> Reproducir"
+                android:textColor="#FFFFFF"
+                app:cornerRadius="9dp"
+                app:layout_constraintBottom_toBottomOf="@+id/materialToolbar"
+                app:layout_constraintEnd_toEndOf="@+id/materialToolbar"
+                app:layout_constraintHorizontal_bias="0.549"
+                app:layout_constraintStart_toStartOf="@+id/materialToolbar" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

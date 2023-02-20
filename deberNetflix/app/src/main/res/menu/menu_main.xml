@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Inicio"
+        android:id="@+id/inicio"
+        android:icon="@drawable/ic_home"/>
+    <item android:title="Busqueda"
+        android:id="@+id/busqueda"
+        android:icon="@drawable/ic_search"/>
+    <item android:title="Descargas"
+        android:id="@+id/descargas"
+        android:icon="@drawable/ic_baseline_download_24"/>
+    <item android:title="Mas"
+        android:id="@+id/mas"
+        android:icon="@drawable/ic_more"/>
+
+</menu>

@@ -60,8 +60,9 @@ class MainActivity : AppCompatActivity() {
         EBaseDeDatos.tablaEntrenador = ESqliteHelperEntrenador(this)
 
         val botonCiloVida = findViewById<Button>(R.id.btn_ciclo_vida)
-        botonCiloVida
+        botonCiloVida.setOnClickListener{
             .irActividad(ACicloVida::class.java)
+        }
 
         val botonListView = findViewById<Button>(R.id.btn_ir_list_view)
         botonListView

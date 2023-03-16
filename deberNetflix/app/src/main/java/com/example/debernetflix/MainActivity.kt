@@ -19,25 +19,25 @@ public class MainActivity : AppCompatActivity() {
         // recyclerView RecyclerView
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerNetflix)
         recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)//this
-        recyclerView.adapter = SuperHeroAdapter(SuperHeroProvider.superheroList)
+        recyclerView.adapter = SuperHeroAdapter(NetflixProvider.superheroList)
         recyclerView.setHasFixedSize(true)
 
         // offer RecyclerView
         val offerRecyclerView = findViewById<RecyclerView>(R.id.offerRecyclerview)
         offerRecyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)//this
-        offerRecyclerView.adapter = SuperHeroAdapter(SuperHeroProvider.peliculasList)
+        offerRecyclerView.adapter = SuperHeroAdapter(NetflixProvider.peliculasList)
         offerRecyclerView.setHasFixedSize(true)
 
         // clothing RecyclerView
         val clothingRecyclerView = findViewById<RecyclerView>(R.id.clothingRecyclerView)
         clothingRecyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)//this
-        clothingRecyclerView.adapter = SuperHeroAdapter(SuperHeroProvider.seriesList)
+        clothingRecyclerView.adapter = SuperHeroAdapter(NetflixProvider.seriesList)
         clothingRecyclerView.setHasFixedSize(true)
 
         // bestSeller RecyclerView
         val bestSellerRecyclerView = findViewById<RecyclerView>(R.id.bestSellerRecyclerview)
         bestSellerRecyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)//this
-        bestSellerRecyclerView.adapter = SuperHeroAdapter(SuperHeroProvider.animeList)
+        bestSellerRecyclerView.adapter = SuperHeroAdapter(NetflixProvider.animeList)
         bestSellerRecyclerView.setHasFixedSize(true)
     }
 

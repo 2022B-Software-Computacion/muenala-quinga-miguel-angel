@@ -1,6 +1,6 @@
 package com.example.debernetflix
 
-data class SuperHero (
+data class Netflix (
     val superhero: String,
     val photo: String
     )

@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.concesionaria.adapter.ConcesionariaAdapter
@@ -19,7 +20,7 @@ class MostrarConcesionarias : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mostrar_concesionarias)
-        this.setTitle("Mostrar Autos por Concesionarias")
+        this.setTitle("Mostrar Autos por Concesionaria")
 
         ObtenerAutos()
     }
@@ -40,10 +41,13 @@ class MostrarConcesionarias : AppCompatActivity() {
                     Log.d( "Datos de Autos: ", "$listaAutos")
                 }
             // recyclerView RecyclerView de autos
+
             val recyclerView = findViewById<RecyclerView>(R.id.recyclerViewAutos)
             recyclerView.layoutManager = LinearLayoutManager(this)//this
+            val decoration = DividerItemDecoration(this, LinearLayoutManager(this).orientation)// variable para seprar cada item de la lista
             recyclerView.adapter = ConcesionariaAdapter(listaAutos)
             recyclerView.setHasFixedSize(true)
+            recyclerView.addItemDecoration(decoration)//separador de items
 
         }
 

@@ -4,14 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#115C51F3"
+    android:backgroundTint="#0D7D73DA"
+    android:hapticFeedbackEnabled="false"
     tools:context=".MostrarConcesionarias">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewAutos"
         android:layout_width="match_parent"
-        android:layout_height="460dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_height="557dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#007D73DA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -21,8 +25,8 @@
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/materialToolbar"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:background="#9274C3"
+        android:layout_height="170dp"
+        android:background="#115C51F3"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +44,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/materialToolbar"
-        app:layout_constraintVertical_bias="0.518" />
+        app:layout_constraintVertical_bias="0.6" />
 
     <Button
         android:id="@+id/btnBuscarAutos"
@@ -49,9 +53,8 @@
         android:text="Buscar Autos"
         app:layout_constraintBottom_toBottomOf="@+id/materialToolbar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/materialToolbar"
-        app:layout_constraintVertical_bias="0.747" />
+        app:layout_constraintVertical_bias="0.918" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

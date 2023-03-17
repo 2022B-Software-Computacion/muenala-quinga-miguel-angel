@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#115C51F3"
     tools:context=".AgregarAuto">
 
     <EditText
@@ -12,23 +13,23 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
         android:layout_marginBottom="16dp"
-        android:minHeight="48dp"
+        android:autofillHints=""
         android:hint="Nombre del auto"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/tvConceAuto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/tvAnio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
+        android:hint="Año"
         android:minWidth="48dp"
         android:minHeight="48dp"
-        android:hint="Año"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvConceAuto" />
@@ -50,8 +51,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:minHeight="48dp"
         android:hint="Silindrage del Motor"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,8 +63,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:minHeight="48dp"
         android:hint="Concesionaria"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,9 +75,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
+        android:hint="Id de auto"
         android:minWidth="32dp"
         android:minHeight="48dp"
-        android:hint="Id de auto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

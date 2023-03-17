@@ -6,21 +6,22 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import com.google.firebase.firestore.ktx.firestore
+import java.util.*
 import com.google.firebase.ktx.Firebase
 
 class AgregarAuto : AppCompatActivity() {
-    val db = Firebase.firestore
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_agregar_auto)
-        this.setTitle("Agregar Auto")
+        this.setTitle("Agregar auto")
 
         initEventAgregarAuto()
     }
 
 
-    fun initEventAgregarAuto(){
+    private fun initEventAgregarAuto(){
+        val db = Firebase.firestore
         val botonFirestore= findViewById<Button>(R.id.btnAgregarAutoA)
         botonFirestore.setOnClickListener {
             val nameAut =findViewById<EditText>(R.id.tvNombreAuto)
@@ -31,15 +32,17 @@ class AgregarAuto : AppCompatActivity() {
 
             db.collection(nameConc.text.toString()).document(idAut.text.toString()).set(
                 hashMapOf(
-                    "Nombre" to nameAut.text.toString(),
-                    "Concecionaria" to nameConc.text.toString(),
-                    "Anio" to anioAut.text.toString(),
-                    "Motor" to motorAut.text.toString()
+                    "name" to nameAut.text.toString(),
+                    "concecionaria" to nameConc.text.toString(),
+                    "anio" to anioAut.text.toString(),
+                    "motor" to motorAut.text.toString()
                 )
             )
 
         }
     }
+    /*
 
+    */
 
 }

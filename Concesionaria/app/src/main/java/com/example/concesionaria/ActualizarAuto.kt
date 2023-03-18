@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
@@ -30,10 +31,13 @@ class ActualizarAuto : AppCompatActivity() {
             val anioAut =findViewById<EditText>(R.id.tvActAnioAut)//A RECUPERAR
             val motorAut =findViewById<EditText>(R.id.tvActMotorAut)//A RECUPERAR
 
+            val imgAuto =findViewById<EditText>(R.id.tvActURLAuto)//A RECUPERAR
+
             db.collection(nameConc.text.toString()).document(idAut.text.toString()).get().addOnSuccessListener {
                 nameAut.setText(it.get("name")as String?)
                 anioAut.setText(it.get("anio")as String?)
                 motorAut.setText(it.get("motor")as String?)
+                imgAuto.setText(it.get("url")as String?)
             }
 
         }
@@ -48,12 +52,15 @@ class ActualizarAuto : AppCompatActivity() {
             val anioAut =findViewById<EditText>(R.id.tvActAnioAut)//A RECUPERAR
             val motorAut =findViewById<EditText>(R.id.tvActMotorAut)//A RECUPERAR
 
+            val imgAuto =findViewById<EditText>(R.id.tvActURLAuto)//A RECUPERAR
+
             db.collection(nameConc.text.toString()).document(idAut.text.toString()).set(
                 hashMapOf(
                     "name" to nameAut.text.toString(),
                     "concecionaria" to nameConc.text.toString(),
                     "anio" to anioAut.text.toString(),
-                    "motor" to motorAut.text.toString()
+                    "motor" to motorAut.text.toString(),
+                    "url" to imgAuto.text.toString()
                 )
             )
 

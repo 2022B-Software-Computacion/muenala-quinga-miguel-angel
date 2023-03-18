@@ -30,12 +30,15 @@ class AgregarAuto : AppCompatActivity() {
             val motorAut =findViewById<EditText>(R.id.tvMotor)
             val idAut =findViewById<EditText>(R.id.txId)
 
+            val imgAuto =findViewById<EditText>(R.id.txAgrURLAuto)//A RECUPERAR
+
             db.collection(nameConc.text.toString()).document(idAut.text.toString()).set(
                 hashMapOf(
                     "name" to nameAut.text.toString(),
                     "concecionaria" to nameConc.text.toString(),
                     "anio" to anioAut.text.toString(),
-                    "motor" to motorAut.text.toString()
+                    "motor" to motorAut.text.toString(),
+                    "url" to imgAuto.text.toString()
                 )
             )
 

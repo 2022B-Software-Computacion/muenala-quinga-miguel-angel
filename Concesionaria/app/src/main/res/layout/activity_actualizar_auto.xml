@@ -8,14 +8,26 @@
     tools:context=".ActualizarAuto">
 
     <EditText
+        android:id="@+id/tvActURLAuto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:hint="URL de la imágen del auto"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvActMotorAut" />
+
+    <EditText
         android:id="@+id/tvActNombeAut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="196dp"
+        android:layout_marginTop="140dp"
         android:hint="Nombre del auto"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvActIdAut" />
 
@@ -48,12 +60,13 @@
         android:id="@+id/btnActualizarAuto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
+        android:layout_marginStart="52dp"
         android:layout_marginBottom="64dp"
         android:text="Actualizar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvActAnioAut" />
+        app:layout_constraintTop_toBottomOf="@+id/tvActAnioAut"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/tvActConcAut"
@@ -100,8 +113,9 @@
         android:text="Eliminar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintHorizontal_bias="0.411"
         app:layout_constraintStart_toEndOf="@+id/btnActualizarAuto"
-        app:layout_constraintTop_toBottomOf="@+id/tvActAnioAut" />
+        app:layout_constraintTop_toBottomOf="@+id/tvActAnioAut"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

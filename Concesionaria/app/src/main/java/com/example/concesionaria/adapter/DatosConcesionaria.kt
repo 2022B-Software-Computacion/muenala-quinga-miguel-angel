@@ -4,5 +4,6 @@ data class DatosConcesionaria(
     var anio: String ="",
     var concecionaria: String ="",
     var motor: String ="",
-    var name: String =""
+    var name: String ="",
+    var url: String =""
 )
